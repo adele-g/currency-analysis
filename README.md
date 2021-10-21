@@ -3,10 +3,10 @@ Currency analysis in relation to USD
 
 Запуск сервиса: 
 1) cd currency-analysis
-2) ./gradlew bootBuildImage --imageName=currencyService
-3) docker run -p 8080:8080 -t currencyService
+2) ./gradlew bootBuildImage --imageName=localhost:8080/api/currency
+3) docker run -p 8080:8080 -t localhost:8080/api/currency
 
-Endpoint:
+Endpoints:
 
 GET http://localhost:8080/api/currency/ -> для получения gif;
 GET http://localhost:8080/api/currency/testing -> отображает информацию в json;
